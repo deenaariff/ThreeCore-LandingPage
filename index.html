@@ -1,0 +1,110 @@
+<html>
+
+	<head>
+
+	</head>
+
+	<style type="text/css">
+
+		@font-face {
+    		font-family: Main;
+    		src: url('./Gotham-Light.otf');
+		}
+
+		@-webkit-keyframes swing {
+		  0%   { -webkit-transform: rotateX(-30deg); transform: rotateX(-30deg); }
+		  100% { -webkit-transform: rotateX(30deg); transform: rotateX(30deg); }
+		}
+
+		html body {
+			padding: 0;
+			margin: 0;
+			font-family: Main;
+			background: #000;
+		}
+		h1 {
+			color: #fff;
+			font-size: 1.7em;
+			line-height: 80%;
+		}
+		h2 {
+			font-size: .8em;
+			color: #efefef;
+		}
+  		.header {
+    		background-color: #fff;
+    		height: 8%; 
+    		display: block;
+    		width: 100%;
+    		outline: none;
+    		background: #fff;
+        }
+        .header .helper {
+        	display: inline-block;
+		    height: 100%;
+		    vertical-align: middle;
+        }
+        .header img {
+        	text-align: left;
+        	height: 50%;
+        	vertical-align: middle;
+        	margin-left: 10px;
+        }
+        .gif {
+        	background-image: url(./swing.gif);
+        	color: #fff;
+        	height: 70%;
+        	text-align: center;
+        	width: 60%;
+        	margin-left: auto;
+        	margin-right: auto;
+        	display: block;
+        	background-size: 100%;
+        	background-repeat: no-repeat;
+        	padding-top: 40px;
+        }
+        .gif .circle {
+        	background: #38B449;
+        	border-radius: 100%;
+        	display: block;
+        	height: 70px;
+        	width: 70px;
+        	margin: 10px;
+        	margin-right: auto;
+        	margin-left: auto;
+        }
+        .gif .circle {
+        	-webkit-animation: swing .6s infinite; /* Safari 4+ */
+  			-moz-animation:    swing .6s infinite; /* Fx 5+ */
+  			-o-animation:      swing .6s infinite; /* Opera 12+ */
+  			animation:         swing .6s infinite; /* IE 10+, Fx 29+ */
+		}
+        .text {
+        	background: #000;
+        	display: block;
+        	height: 92%;
+        	text-align: center;
+        }
+
+  	</style>
+
+	<body>
+		<div class = "header">
+			<span class="helper"></span>
+			<img src = "./logo.png"></img>
+		</div>
+		<div class = "text">
+			<div class = "gif">
+				<div class = "circle">
+				</div>
+				<div class = "circle">
+				</div>
+				<div class = "circle">
+				</div>
+			</div>
+			<h1> Same great work, new playground. </h1>
+			<h2> Swing by No 24-2 Jalan Telawi 3, Bangsar. </h2>
+		</div>
+
+	</body>
+</html>
